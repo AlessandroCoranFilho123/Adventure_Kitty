@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+  --bg-color-dark: #121212;
+  --text-color-dark: #eaeaea;
+  --bg-color-light: #f8f6f6;
+  --text-color-light: #121212;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+footer a {
+  color: rgb(157, 166, 247);
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Iansui", cursive;
+}
+
+h2 {
+  color: #708090;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 100px;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  margin-top: 75px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto1 {
+  font-size: 25px;
+  text-align: justify;
+  margin: 25px 60px 25px 60px;
+  line-height: 30px;
+}
+
+.texto2 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.texto3 {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.botao {
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(84, 167, 104);
+  display: inline;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  margin-top: 120px;
+}
+
+nav ul {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f4f4f;
+}
+
+nav {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+  justify-content: space-around;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+#mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+}
+
+.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+#mode-toggle:hover {
+  background-color: #646464;
+}
+
+.botao:hover {
+  background-color: #2d7734;
+}
