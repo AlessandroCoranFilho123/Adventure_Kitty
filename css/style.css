@@ -2,16 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 :root {
-  --bg-color-dark: #121212;
-  --text-color-dark: #eaeaea;
-  --bg-color-light: #f8f6f6;
-  --text-color-light: #121212;
+  --bg-color-dark: #1A1A2E;
+  --text-color-dark: #EAEAEA;
+  --bg-color-light: #F8F9FA;
+  --text-color-light: #212529;
+  --bg-color-nav-dark: #191929;
+  --bg-color-nav-light: #d5d7da;
 }
+
 
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color-dark);
   color: var(--text-color-dark);
+  margin: 0;
+  background: url(/images/abc.png);
+  background-size: contain;
 }
 
 footer a {
@@ -20,28 +26,62 @@ footer a {
 
 a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
   font-family: "Iansui", cursive;
 }
 
 h2 {
-  color: #708090;
-  font-size: 35px;
+  color: #B0B0B0;
+  font-size: 32px;
   text-align: center;
   font-family: "Permanent Marker", cursive;
-  margin-top: 100px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
 }
 
 img {
   height: 500px;
   width: 500px;
   display: flex;
-  margin-top: 75px;
+}
+
+nav ul {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #E94560;
+}
+
+nav {
+  background-color: var(--bg-color-nav-dark, --bg-color-nav-light);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  display: flex;
+  z-index: 0;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .img {
@@ -57,85 +97,105 @@ img {
 }
 
 .texto1 {
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
-  margin: 25px 60px 25px 60px;
   line-height: 30px;
 }
 
-.texto2 {
-  font-size: 25px;
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px #00000033;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
   text-align: center;
-  line-height: 35px;
+}
+
+.texto2 {
+  list-style-type: none;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .texto3 {
   text-align: center;
   line-height: 50px;
-  font-size: 30px;
+  font-size: 18px;
+}
+
+.texto2 li {
+  flex-grow: 1;
+  color: #2C3E50;
 }
 
 .botao {
-  padding: 15px;
-  font-size: 32px;
-  border-radius: 15px;
-  border: none;
-  background-color: rgb(84, 167, 104);
-  display: inline;
+  background-color: #E94560;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #ffffff;
   cursor: pointer;
-  transition-duration: 0.5s;
-  margin-top: 120px;
-}
-
-nav ul {
-  width: 100%;
-  justify-content: space-around;
-  display: flex;
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #2f4f4f;
-}
-
-nav {
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #e6e6e6;
-  border-radius: 15px;
-  justify-content: space-around;
-  display: flex;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #1f1f1f;
-  color: white;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: 18px;
 }
 
 #mode-toggle {
   position: fixed;
   top: 20px;
   right: 20px;
-  padding: 5px;
-  font-size: 25px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #333;
+  background-color: #24243a;
+  z-index: 1;
+  padding: 10px;
+}
+
+.dark-mode nav {
+  background-color: var(--bg-color-nav-dark);
 }
 
 .dark-mode {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.light-mode nav {
+  background-color: var(--bg-color-nav-light);
 }
 
 .light-mode {
-    background-color: var(--bg-color-light);
-    color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
 }
 
 #mode-toggle:hover {
@@ -143,5 +203,9 @@ footer {
 }
 
 .botao:hover {
-  background-color: #2d7734;
+  background-color: #FF6B81;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #ca5364;
 }

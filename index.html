@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adventure Kitty</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <h1>Adventure Kitty</h1>
-    <button id="mode-toggle">☀️</button>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#historia">História</a></li>
-          <li><a href="#detalhes">Detalhes</a></li>
-          <li><a href="#contato">Fale Conosco</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <div class="img">
-        <img src="/images/AdventureKitty.png" alt="adventure kitty" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/GatoFavicon.png">
+  <title>Adventure Kitty</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button id="mode-toggle">☀️</button>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#detalhes">Detalhes</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Adventure Kitty</h1>
+  <main>
+    <div class="img">
+      <!--<img src="/images/AdventureKitty.png" alt="adventure kitty">  -->
+    </div>
+    <div class="download">
+      <button class="botao" role="button">Download</button>
+    </div>
+    <section id="historia">
+      <h2>História</h2>
+      <p class="texto1">
+        <b>Neko</b>, o gato protagonista dessa história, estava em seu quintal
+        em mais um dia normal brincando, quando de repente é teletransportado
+        para um mundo desconhecido. <br>
+        Após conhecer <b>Sabu</b>, um gato ancião que morava ali, Neko
+        descobre que precisará se aventurar por 10 diferentes reinos atrás de
+        10 saches de gato místico, que quando combinados podem conceder um
+        pedido.<br>
+        Querendo voltar pra casa, <b>Neko</b> decide ir nessa jornada com a
+        ajuda de <b>Sabu</b>, mas o que ele não sabe, é que tem bem menos
+        tempo para isso do que imagina... <br>
+      </p>
+    </section>
+
+    <section id="detalhes">
+      <h2>Detalhes</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Requisitos Mínimos</h3>
+          <ul class="texto2">
+            <li><strong>Sistema operacional:</strong> Windows 7</li>
+            <li><strong>Processador:</strong> Intel Celeron 847 ou AMD Athlon 3000G</li>
+            <li><strong>Memória RAM:</strong> 2 GB</li>
+            <li><strong>Placa de vídeo:</strong> Intel HD Graphics 4000 ou AMD Radeon RX Vega 5</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Requisitos Recomendados</h3>
+          <ul class="texto2">
+            <li><strong>Sistema operacional:</strong> Windows 10 ou superior</li>
+            <li><strong>Processador:</strong> Intel i7-6500U ou AMD Ryzen 5 5600G</li>
+            <li><strong>Memória RAM:</strong> 4 GB</li>
+            <li><strong>Placa de vídeo:</strong> Nvidia RTX 3050 ou AMD RX 550</li>
+          </ul>
+        </div>
       </div>
-      <div class="download">
-        <button class="botao">Download</button>
-      </div>
-      <section id="historia">
-        <h2>História</h2>
-        <p class="texto1">
-          <b>Neko</b>, o gato protagonista dessa história, estava em seu quintal
-          em mais um dia normal brincando, quando de repente é teletransportado
-          para um mundo desconhecido. <br />
-          Após conhecer <b>Sabu</b>, um gato ancião que morava alí, Neko
-          descobre que precisará se aventurar por 10 diferentes reinos atrás de
-          10 saches de gato místico, que quando combinados podem conceder um
-          pedido.<br />
-          Querendo voltar prar casa, <b>Neko</b> decidi ir nessa jornada com a
-          ajuda de <b>Sabu</b>, mas o que ele não sabe, é que tem bem menos
-          tempo para isso do que imagina... <br />
-        </p>
-      </section>
+    </section>
 
-      <section id="detalhes">
-        <h2>Detalhes</h2>
-        <p class="texto2">
-          <b>Requisitos mínimos</b> <br />
-          Sistema operacional: Windows 7 ou superior <br />
-          Processador: Intel Celeron 847 ou AMD Athlon 3000G <br />
-          Memória RAM: 2 GB <br />
-          Placa de vídeo: Intel HD Graphics 4000 ou AMD Radeon RX Vega 5 <br />
-          <br />
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <p class="texto3">📧 adventurekitty@gmail.com</p>
+      <p class="texto3">📞 (19) 9 4002-8922</p>
+    </section>
+  </main>
 
-          <b>Requisitos recomendados</b> <br />
-          Sistema operacional: Windows 10 ou superior <br />
-          Processador: Intel i7-6500U ou AMD Ryzen 5 5600G <br />
-          Memória RAM: 4GB<br />
-          Placa de vídeo: NVidia RTX 3050 ou AMD RX 550 <br />
-        </p>
-      </section>
+  <footer>
+    <p>Siga-nos nas redes sociais:</p>
+    <a href="https://www.facebook.com/">Facebook</a> |
+    <a href="https://x.com/">Twitter</a> |
+    <a href="https://www.instagram.com/">instagram</a>
+    <p>Alessandro Coran Filho</p>
+  </footer>
 
-      <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p class="texto3">📧 adventurekitty01@gmail.com</p>
-        <p class="texto3">📞 (19) 9 4002-8922</p>
-      </section>
-    </main>
+  <script src="javascript/script.js"></script>
+</body>
 
-    <footer>
-      <p>Siga-nos nas redes sociais:</p>
-      <a href="https://www.facebook.com/">Facebook</a> |
-      <a href="https://x.com/">Twitter</a> |
-      <a href="https://www.instagram.com/">instagram</a>
-      <p>Alessandro Coran Filho</p>
-    </footer>
-
-    <script src="javascript/script.js"></script>
-  </body>
 </html>
