@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  --bg-color-dark: #1A1A2E;
+  --bg-color-dark: #0d1117;
   --text-color-dark: #EAEAEA;
-  --bg-color-light: #F8F9FA;
+  --bg-color-light: #ffffff;
   --text-color-light: #212529;
-  --bg-color-nav-dark: #191929;
-  --bg-color-nav-light: #d5d7da;
-  --text-color-navullia-light: #1E3A5F;
-  --bg-color-footer-dark: #191929;
+  --bg-color-nav-dark: #161b22;
+  --bg-color-nav-light: #f6f8fa;
+  --text-color-navullia-light: #24292f;
+  --bg-color-footer-dark: #161b22;
   --bg-color-footer-light: #d5d7da;
   --text-color-footera-dark: rgb(157, 166, 247);
   --text-color-footera-light: rgb(0, 160, 253);
+  --text-color-h2-light: #24292f;
 }
 
 body {
@@ -29,21 +30,22 @@ a {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 80px;
   text-align: center;
   font-family: "Iansui", cursive;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #191929;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
-  color: #B0B0B0;
+  color: #EAEAEA;
   font-size: 32px;
   text-align: center;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Playfair Display", serif;
 }
 
 h3 {
@@ -79,7 +81,7 @@ nav ul {
 
 nav ul li a {
   font-weight: bold;
-  color: #E94560;
+  color: #c9d1d9;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -102,26 +104,17 @@ footer a {
   color: var(--text-color-footera-dark);
 }
 
-.container img {
-  display: flex;
-  top: 12px;
-}
-
-.texto1 {
-  font-size: 18px;
-  text-align: justify;
-  line-height: 30px;
-}
-
 .cards-container {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .container img {
-  height: 450px;
+  display: flex;
+  top: 12px;
+  height: 745px;
   object-fit: cover;
   width: 100%;
   filter: opacity(0.7) contrast(1) blur(1px);
@@ -134,16 +127,20 @@ footer a {
   padding: 20px;
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+}
+
+.texto1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
 }
 
 .texto2 {
   list-style-type: none;
-}
-
-.texto3 {
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
+  color: var(--text-color-light);
 }
 
 .container {
@@ -152,13 +149,16 @@ footer a {
 }
 
 .gato {
+  height: 100%;
   width: 100%;
   display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .botao {
   position: absolute;
-  bottom: 150px;
+  bottom: 115px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #E94560;
@@ -168,8 +168,17 @@ footer a {
   cursor: pointer;
   font-weight: 600;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 15px 45px;
   transition: 0.3s ease;
+}
+
+#historia {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+#detalhes {
+  margin-bottom: 150px;
 }
 
 #mode-toggle {
@@ -183,7 +192,7 @@ footer a {
   background-color: #24243a;
   padding: 10px;
   z-index: 10;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .dark-mode {
@@ -215,6 +224,7 @@ footer a {
 .light-mode nav ul li a {
   color: var(--text-color-navullia-light);
 }
+
 .light-mode footer {
   background-color: var(--bg-color-footer-light);
   color: black;
@@ -223,6 +233,14 @@ footer a {
 
 .light-mode footer a {
   color: var(--text-color-footera-light);
+}
+
+.light-mode #mode-toggle {
+  background-color: #c7c4c4;
+}
+
+.light-mode h2 {
+ color: var(--text-color-h2-light);
 }
 
 #mode-toggle:hover {
